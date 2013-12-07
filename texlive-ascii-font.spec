@@ -6,7 +6,7 @@
 # catalog-version 2.0
 Name:		texlive-ascii-font
 Version:	2.0
-Release:	4
+Release:	5
 Summary:	Use the ASCII "font" in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ascii
