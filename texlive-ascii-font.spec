@@ -1,19 +1,13 @@
-# revision 29989
-# category Package
-# catalog-ctan /fonts/ascii
-# catalog-date 2013-04-15 01:42:14 +0200
-# catalog-license lppl
-# catalog-version 2.0
 Name:		texlive-ascii-font
-Version:	2.0
-Release:	10
+Version:	29989
+Release:	1
 Summary:	Use the ASCII "font" in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ascii
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.r29989.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.doc.r29989.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.source.r29989.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -27,12 +21,12 @@ Graphics. This package replaces any early LaTeX 2.09 package
 and "font" by R. Ramasubramanian and R.W.D. Nickalls.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -47,7 +41,8 @@ and "font" by R. Ramasubramanian and R.W.D. Nickalls.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
