@@ -1,6 +1,6 @@
 Name:		texlive-ascii-font
 Version:	29989
-Release:	1
+Release:	2
 Summary:	Use the ASCII "font" in LaTeX
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ascii
