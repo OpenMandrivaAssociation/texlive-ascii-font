@@ -3,7 +3,7 @@ Version:	29989
 Release:	2
 Summary:	Use the ASCII "font" in LaTeX
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ascii
+URL:		https://www.ctan.org/tex-archive/fonts/ascii
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ascii-font.doc.r%{version}.tar.xz
